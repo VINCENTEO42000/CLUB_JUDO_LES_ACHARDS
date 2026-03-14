@@ -1,0 +1,280 @@
+/* RESET : permet d'effacer le style par défaut imposé par le navigateur */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+/*-------------------------------------------------------------------------------------------*/
+/* mes polices */
+
+body {
+
+    font-family: "Poppins", sans-serif;
+
+    font-style: normal;
+
+}
+
+
+
+
+
+/*-------------------------------------------------------------------------------------------*/
+/* dans un container on un a max-width et un width 100% */
+.container-1000 {
+    max-width: 1000px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+
+
+}
+
+*-------------------------------------------------------------------------------------------*/
+/* TEST DE VISUALISATION POUR LES NULS!!!*/
+
+.bgred {
+    background-color: red;
+}
+
+.bgblue {
+    background-color: blue;
+}
+
+.bggreen {
+    background-color: green;
+}
+
+.bgyellow {
+    background-color: yellow;
+}
+
+/*-------------------------------------------------------------------------------------------*/
+
+
+/* les classe fonctionnelle flex */
+
+.flex {
+    display: flex;
+    /*rendre flexible un parent = aligner ses enfants */
+    flex-wrap: wrap;
+    /* revient à la ligne */
+}
+
+/* mettre un espace entre les enfant*/
+.space-between {
+    justify-content: space-between;
+}
+
+/* en plus un espace sur les côtés*/
+.space-around {
+    justify-content: space-around;
+}
+
+
+/*-------------------------------------------------------------------------------------------*/
+/* les classes de largeur */
+
+
+
+/*-------------------------------------------------------------------------------------------*/
+/* seul les margin top et bottom sont tolérés*/
+
+
+
+*-------------------------------------------------------------------------------------------*/
+
+/*classe bouton*/
+.btn {
+    background-color: #3C558D;
+    color: white;
+    padding: 15px 15px;
+    display: inline-block;
+    border-radius: 25px;
+}
+
+
+/*-------------------------------------------------------------------------------------------*/
+/* section hero*/
+
+.section-hero {
+    background-image: url(assets/pexels-kampus-6765024.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vH;
+    margin-top: 80px;
+    color: white;
+
+}
+
+/*-------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------*/
+/* section nav responsive*/
+
+.header {
+    background-color: #08016c;
+    width: calc(100% - 40px);
+    height: 100px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 20px;
+    box-shadow: #a09dcf;
+}
+
+.header_logo img {
+    max-height: 80px;
+    border-radius: 5px;
+}
+
+.header_nav_menu {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.header_nav_menu_link {
+    margin-right: 12px;
+
+}
+
+.header_nav_menu_link:last-of-type {
+    margin-right: initial;
+
+}
+
+.header_nav_menu_link a {
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+    position: relative;
+
+
+}
+
+.header_nav_menu_link a::after {
+    content: '';
+    height: 2px;
+    background-color: red;
+    width: 0;
+    position: absolute;
+    bottom: -5px;
+    transition: 0.2s all ease-in-out;
+
+}
+
+.header_nav_menu_link a:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+/*-------------------------------------------------------------------------------------------*/
+/* ici ma fonction responsive, ici on code le desktop first et le mobile on le fera après*/
+/* pris sur Alsace media quiries*/
+
+.header_burger {
+    display: none;
+    cursor: pointer;
+}
+
+.header_burger svg {
+    stroke: white;
+    width: 22px;
+    height: 22px;
+}
+
+.header_nav_close {
+    display: none;
+}
+
+@media screen and (max-width: 500px) {
+
+
+    .header_burger{
+        display: block;
+    }
+
+    .header_nav {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 300px;
+        height: 1OOvh;
+        background-color: #08016c;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transform: translateX(100%);
+       
+        transition: 0.3s transform ease-in-out;
+        
+    }
+
+    .header_nav.open {
+        transform: initial;
+  
+    }
+
+    .header_nav_menu {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .header_nav_menu_link {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .header_nav_menu_link a {
+        font-size: 25px;
+    }
+
+    .header_nav_close {
+        display: block;
+        cursor: pointer;
+    }
+
+    .header_nav_close svg {
+        stroke: white;
+        width: 22px;
+        height: 22px;
+        position: absolute;
+        top: 16px;
+        right: 16px;
+    }
+
+
+.overlay-menu-mobile {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vh;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.6);
+    display : none;
+}
+    
+
+.overlay-menu-mobile.open {
+    display : block
+}
+
+}
+
+
+
+
+
+/*-------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------*/
