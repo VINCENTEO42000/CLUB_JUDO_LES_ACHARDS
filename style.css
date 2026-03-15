@@ -120,7 +120,7 @@ h1 {
 }
 
 .txt-red {
-    color :red;
+    color: red;
 }
 
 /*-------------------------------------------------------------------------------------------*/
@@ -444,7 +444,7 @@ h1 {
     padding: 15px;
 }
 
-    .utilisateur {
+.utilisateur {
     border-radius: 50%;
     height: 80px;
     width: 80px;
@@ -483,6 +483,11 @@ h1 {
 }
 
 .header_logo img {
+    max-height: 80px;
+    border-radius: 5px;
+}
+
+.footer_logo img {
     max-height: 80px;
     border-radius: 5px;
 }
@@ -543,7 +548,7 @@ h1 {
     stroke: white;
     width: 50px;
     height: 50px;
-    
+
 }
 
 .header_nav_close {
@@ -620,6 +625,24 @@ h1 {
 
     .overlay-menu-mobile.open {
         display: block
+    }
+
+
+    /*-------------------------------------------------------------------------------------------*/
+    /* pour le changement des images de mon main*/
+
+
+    .medium500 {
+        width: 100%;
+
+    }
+
+    .medium500-MB-20 {
+        margin-bottom: 20px;
+    }
+
+    .medium500-center {
+        justify-content: center;
     }
 
 }
