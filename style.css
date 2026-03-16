@@ -545,6 +545,7 @@ h1 {
 /*-------------------------------------------------------------------------------------------*/
 /* ici ma fonction responsive, ici on code le desktop first et le mobile on le fera après*/
 /* pris sur Alsace media quiries*/
+/* ECRAN 500*/
 
 .header_burger {
     display: none;
@@ -636,7 +637,7 @@ h1 {
 
 
     /*-------------------------------------------------------------------------------------------*/
-    /* pour le changement des images de mon main*/
+    /* pour le changement des images de mon main ECRAN 500*/
 
 
     .medium500 {
@@ -666,3 +667,101 @@ h1 {
 /*-------------------------------------------------------------------------------------------*/
 /*-------------------------------------------------------------------------------------------*/
 /*-------------------------------------------------------------------------------------------*/
+/* ECRAN 800*/
+
+@media screen and (max-width: 800px) {
+
+
+    .header_burger {
+        display: block;
+    }
+
+    .header_nav {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 300px;
+        height: 1OOvh;
+        background-color: #08016c;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transform: translateX(100%);
+
+        transition: 0.3s transform ease-in-out;
+
+    }
+
+    .header_nav.open {
+        transform: initial;
+
+    }
+
+    .header_nav_menu {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .header_nav_menu_link {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .header_nav_menu_link a {
+        font-size: 25px;
+    }
+
+    .header_nav_close {
+        display: block;
+        cursor: pointer;
+    }
+
+    .header_nav_close svg {
+        stroke: white;
+        width: 22px;
+        height: 22px;
+        position: absolute;
+        top: 16px;
+        right: 16px;
+    }
+
+
+    .overlay-menu-mobile {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vh;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.6);
+        display: none;
+    }
+
+
+    .overlay-menu-mobile.open {
+        display: block
+    }
+
+
+    /*-------------------------------------------------------------------------------------------*/
+    /* pour le changement des images de mon main EN ECRAN 800*/ 
+
+
+    .medium800 {
+        width: 100%;
+
+    }
+
+    .medium800w-100 {
+        width: 100%;
+
+    }
+
+    .medium800-MB-20 {
+        margin-bottom: 20px;
+    }
+
+    .medium800-center {
+        justify-content: center;
+    }
+
+}
