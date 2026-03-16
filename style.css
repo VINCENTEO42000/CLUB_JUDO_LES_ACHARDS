@@ -743,7 +743,7 @@ h1 {
 
 
     /*-------------------------------------------------------------------------------------------*/
-    /* pour le changement des images de mon main EN ECRAN 800*/ 
+    /* pour le changement des images de mon main EN ECRAN 800*/
 
 
     .medium800 {
@@ -762,6 +762,11 @@ h1 {
 
     .medium800-center {
         justify-content: center;
+
     }
+
+    .position-titre-800 {
+    transform: translate(0, 200px);
+}
 
 }
