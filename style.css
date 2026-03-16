@@ -669,7 +669,7 @@ h1 {
 /*-------------------------------------------------------------------------------------------*/
 /* ECRAN 800*/
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
 
 
     .header_burger {
@@ -743,7 +743,7 @@ h1 {
 
 
     /*-------------------------------------------------------------------------------------------*/
-    /* pour le changement des images de mon main EN ECRAN 800*/
+    /* pour le changement des images de mon main EN ECRAN 900*/
 
 
     .medium800 {
