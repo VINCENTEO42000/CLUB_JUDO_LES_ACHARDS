@@ -746,31 +746,31 @@ h1 {
     /* pour le changement des images de mon main EN ECRAN 900*/
 
 
-    .medium800 {
+    .medium900 {
         width: 100%;
 
     }
 
-    .medium800w-100 {
+    .medium900w-100 {
         width: 100%;
 
     }
 
-    .medium800-MB-20 {
+    .medium900-MB-20 {
         margin-bottom: 20px;
     }
 
-    .medium800-center {
+    .medium900-center {
         justify-content: center;
 
     }
 
-    .position-titre-800 {
-    transform: translate(0, 200px);
+    .position-titre-900 {
+    transform: translate(0, 180px);
     
 }
 
-.h1-800 {
+.h1-900 {
     font-size: 30px;
     font-weight: 500;
 }
